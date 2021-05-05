@@ -9,22 +9,29 @@ export default createGlobalStyle`
   }
 
   body{
-    background: #fff;
-    color: #000;
+    background: ${props => props.theme.page.background};
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
+    transition: all .2s ease-in-out;
   }
 
   body, input, button{
     font-size: 16px;
-    font-family: 'Lato', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
   }
 
   h1, h2, h3, h4, h5, h6, strong{
-    font-weight: 500;
+    font-weight: 700;
   }
 
   button{
     cursor: pointer;
+  }
+
+  #root{
+    max-width: 890px;
+    padding: 0 20px;
+    margin: 0 auto;
   }
 `;
